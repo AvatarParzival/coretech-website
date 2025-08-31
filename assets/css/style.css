@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background: #f8f9fa; }
+.navbar { background: #007bff !important; }
+.navbar .nav-link { color: #fff !important; margin-right: 15px; }
+.hero { background: #007bff; color: #fff; }
+.card { border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+footer { background: #007bff; color: #fff; }
+footer p { margin: 0; }
