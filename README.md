@@ -7,6 +7,17 @@ A full-stack **PHP + MySQL** website with **HTML + TailwindCSS frontend** and a 
 The project provides a professional company website where all content (hero text, services, portfolio, team, stats, contact info, and socials) can be managed dynamically through the backend.  
 
 ---
+## 📑 Table of Contents  
+- [✨ Features](#-features)  
+- [🛠 Tech Stack](#-tech-stack)  
+- [📂 Project Folder Structure](#-project-folder-structure)  
+- [⚡ Setup Instructions](#-setup-instructions)  
+- [🚀 Deployed Version](#-deployed-version)  
+- [🔒 Security Features](#-security-features)  
+- [🤝 Contributing](#-contributing)  
+- [📜 License](#-license)  
+
+---
 
 ## ✨ Features  
 
@@ -80,7 +91,7 @@ coretech-website/
 
 2. Clone the repository or you can download as ZIP as well:  
    ```bash
-   git clone https://github.com/your-username/coretech-website.git
+   git clone https://github.com/AvatarParzival/coretech-website
    cd coretech-website
    ```
 
@@ -114,6 +125,33 @@ If you want to deploy online:
 - Or containerize with **Docker** (Apache + PHP + MySQL).  
 
 (Node.js is not used here — project is PHP-based.)  
+
+---
+
+## 🔒 Security Features  
+
+- **Password Hashing** → All admin passwords are stored securely using PHP’s `password_hash()` and verified with `password_verify()`.  
+- **Old Password Verification** → When changing a password, the admin must first provide the current one for verification.  
+- **Role-Based Access** → Only users with the role `admin` can access the backend panel.  
+- **SQL Injection Prevention** → All queries use **prepared statements** with parameter binding.  
+- **Session-Based Authentication** → Admin authentication is handled via PHP sessions.  
+- **Input Validation** → Form inputs are validated and sanitized before storing in the database.  
+- **Restricted File Uploads** → Only specific file types (images) are allowed for team/portfolio uploads.  
+- **Logout Mechanism** → Secure logout to destroy sessions and prevent reuse.  
+
+---
+
+## 🤝 Contributing  
+
+Contributions are welcome! 🎉  
+
+1. **Fork** the repository  
+2. **Create** a new feature branch (`git checkout -b feature/YourFeature`)  
+3. **Commit** your changes (`git commit -m 'Add new feature'`)  
+4. **Push** to your branch (`git push origin feature/YourFeature`)  
+5. **Open a Pull Request**  
+
+Please make sure your code follows best practices and includes proper documentation.  
 
 ---
 
